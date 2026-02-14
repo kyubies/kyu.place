@@ -1,0 +1,361 @@
+body {
+  display: flex;
+  font-family: "nova", ms pgothic, sans-serif;
+  color: #f3ebe7;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color: #454d4c;
+  background-image: url(images/bgs/lainrooom.webp);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 20px;
+}
+#crt {
+  background-image: url(images/bgs/crtnoframe.png);
+  mix-blend-mode: darken;
+  opacity: 0.5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+text {
+  color: #cce6b3;
+  font-size: 20px;
+  margin: 0px;
+  font-family: romancea;
+}
+@font-face {
+  /* font by me! */
+  font-family: nova;
+  src: url(fonts/nova.ttf);
+}
+@font-face {
+  /* font by https://leodacosta.itch.io/gothic-pixel-font */
+  font-family: gothicpixel;
+  src: url(fonts/GothPixelFont.ttf);
+}
+@font-face {
+  /* font by https://www.fontspace.com/old-english-gothic-pixel-font-f83405 */
+  font-family: oldenglishgoth;
+  src: url(fonts/OldEnglishGoth.ttf);
+}
+@font-face {
+  /* font by https://www.asterism-m.com/font/ */
+  font-family: romancea;
+  src: url(fonts/RomanceA.ttf);
+}
+@font-face {
+  /* font by codeman38! https://www.1001fonts.com/users/codeman38/ */
+  font-family: yoster;
+  src: url(fonts/yoster.ttf);
+}
+@font-face {
+  /* font by https://drive.google.com/file/d/1FR15SoZPBp5pJY9JY5x0p86MMEPzBgV8/view */
+  font-family: chaos;
+  src: url(fonts/Angelic.ttf);
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  color: transparent;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0px 1px 3px #222223;
+}
+::-webkit-scrollbar-thumb {
+  background: #cce6b39f;
+  border-radius: 5px;
+}
+.container {
+  height: 800px;
+  width: 1000px;
+  display: flex;
+  min-width: 1000px;
+}
+.all {
+  width: 1000px;
+}
+.header {
+  display: flex;
+  position: relative;
+  width: 1000px;
+  height: 200px;
+
+}
+.header::after{
+  content: '';
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  top: 0px;
+  left: 0px;
+  background-image: url(images/bgs/lainroom.gif);
+  background-size: cover;
+  background-position: center;
+  border: #cce6b3 solid 1px;
+  opacity: 0.5;  
+  border-radius: 5px;
+}
+img {
+  opacity: 0.8;
+}
+.nav {
+  display: flex;
+  width: 680px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #c3ffcd;
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 1px;
+  font-family: romancea;
+}
+h2 {
+  color: #c3ffcd;
+  font-size: 18px;
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+i {
+  color: #c3ffcd;
+  font-style: normal;
+}
+p {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: nova;
+  color: #f3ebe7;
+}
+a:link {
+  text-decoration: none;
+  color: #7ba071;
+}
+a:active {
+  color: #6cc3c1;
+}
+a:visited {
+  color: #7ba071;
+}
+a:hover {
+  color: #6cc3c1;
+}
+#s-m-t-tooltip {
+  /* basic */
+  max-width: 180px;
+  z-index: 10;
+  margin: 24px 14px 7px 12px;
+  /* style and design */
+  padding: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid #72a17a;
+  background: url(images/bgs/mintgingham.gif), #222223;
+  background-blend-mode: multiply;
+  color: #c3ffcd;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 5px #040404;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  height: 1000px;
+}
+.stuff {
+  width: 300px;
+  border: #7ba071 solid 1px;
+  height: 500px;
+  margin-top: 20px;
+}
+.maincontent {
+  width: 680px;
+  margin-top: 20px;
+  height: 700px;
+}
+.title {
+  font-family: "yoster";
+  font-size: 60px;
+  position: absolute;
+  color: #c3ffcd;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px 3px #72a17a;
+  z-index: 5;
+  top: 79px;
+  left: 30px;
+}
+.nav h1 {
+  color: #c3ffcd;
+  margin: 5px;
+}
+.nav h1:hover{
+  font-family: chaos;
+  filter: drop-shadow(0 0 5px #c3ffcd);
+}
+button {
+    border: none;
+    width: fit-content; 
+    height: fit-content;
+    background-color: transparent;
+}
+button:hover {
+  cursor: pointer;
+}
+.tab {
+    display: flex;
+}
+.letterboxd {
+    height: 255px;
+    overflow-y: scroll;
+    width: 500px;
+    margin-top: 10px;
+    padding: 10px;
+    background-image: url(images/bgs/rain.gif);
+    background-size: cover;
+    background-color: #454d4c;
+    background-blend-mode: multiply;
+    box-shadow: inset 0px 0px 10px #36393990, 0px 0px 10px #2222239f;
+}
+.letterboxd img {
+    opacity: 0.9;
+    filter: grayscale(50%);
+}
+.letterboxd-embed-tc-title {
+    color: #c3ffcd;
+    font-family: romancea;
+}
+.letterboxd-embed-tc-divider {
+    border-bottom: #7ba071 dashed 1px !important;
+}
+.letterboxd-embed-tc-rating {
+    color: #7ba071 !important;
+}
+#chi {
+    position: absolute;
+    top: -152px;
+    right: -20px;
+    width: 200px;
+}
+.movieimg {
+  position: relative;
+  height: auto;
+  z-index: 2;
+  filter: grayscale(40%);
+}
+.movielist {
+  background-color: #222223;
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  margin-top: 10px;
+  width: 670px;
+  height: 389px;
+  flex-wrap: wrap;
+  padding: 5px;
+  overflow-y: auto;
+}
+.movie {
+  position: relative;
+  width: 123px;
+  height: fit-content;
+  margin: 5px;
+  filter: grayscale(50%);
+  opacity: 0.8;
+}
+.movieClickable {
+  filter: grayscale(20%);
+}
+.movieClickable:hover .movietext{
+  text-decoration: dotted underline;
+}
+.movieClickable:hover .overlay{
+  filter: drop-shadow(0 0 5px #c3ffcd);
+  cursor: pointer;
+}
+.moviepic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #c3ffcd;
+}
+.movie:hover .overlay {
+  opacity: .8;
+}
+.movietext {
+  color:#222223;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.bar {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  align-content: center;
+  font-size: 22px;
+  font-family: romancea;
+  color: #7ba071;
+  letter-spacing: 1px;
+  background-position: center;
+  padding: 0px;
+  padding-top: 5px;
+  border-bottom: 1px solid #7ba071;
+  font-weight: bold;
+}
+.moviecontent {
+  margin-top: 10px !important;
+  width: 678px;
+  height: 397px; 
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  overflow-y: auto;
+  background-color: #222223;
+  border: #7ba071 solid 1px;
+}
+.tvshows {
+  width: 500px;
+  height: 300px;
+  border: #7ba071 solid 1px;
+}

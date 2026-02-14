@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>media</title>
+    <link href="hover.css" rel="stylesheet">
+    <link href="media.css" rel="stylesheet">
+    <script src="scripts/wobble.js"></script>
+    <script src="scripts/tabs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+    <script>
+ (function($){$(document).ready(function(){
+ $("[title]").style_my_tooltips({
+ tip_follows_cursor: true,
+ tip_delay_time:10,
+ tip_fade_speed:10,
+ attribute:"title"
+ });
+ });
+ })(jQuery);
+</script>
+</head>
+<body>
+<div id="crt"></div>
+<div class="all">
+<div class="header">
+  <div class="title hvr-rotate">/media</div>
+</div>
+<div class="container">
+<div class="left">
+<div class="stuff"></div>
+<a href="index.html" style="margin-top: 20px; text-align: left;">go back?</a>
+</div>
+<div class="main">
+<div class="nav">
+  <h2>|</h2>
+  <button onclick="openTab('movies')"><h1>movies</h1></button>
+  <h2>|</h2>
+  <button onclick="openTab('shows')"><h1>tv shows</h1></button>
+  <h2>|</h2>  
+  <button onclick="openTab('books')"><h1>books</h1></button>
+  <h2>|</h2>
+  <button onclick="openTab('games')"><h1>games</h1></button>
+  <h2>|</h2>
+  <button onclick="openTab('music')"><h1>music</h1></button>
+  <h2>|</h2>
+</div>
+<div class="maincontent">
+    <div id="movies" class="tab" style="display: block; padding: 0px;">
+    <h1>Last watched on letterboxd...</h1>
+    <div id="letterboxd-embed-wrapper-tc" class="letterboxd">Loading...</div>
+<script>
+fetch('https://lb-embed-content.bokonon.dev?username=denpakyun')
+.then(response => response.text())
+.then(data => {
+document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
+});
+</script>
+<div class="movieimg" data-toggle="tooltip" title="glowing movie posters can be clicked!"><img id="chi" src="images/chi.gif"></div>
+<h1 style="margin-top: 10px;">Recent movies</h1>
+<div class="movielist">
+<div class="movie">
+<img src="images/movies/priscilla.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">Priscilla<br>★★★★</div>
+</div>
+</div>
+<div class="movie movieClickable" onclick="openMovie('marty')">
+<img src="images/movies/marty.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">Marty Supreme<br>★★★★★</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/wakeupdeadman.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">Wake Up Dead Man<br>★★★★</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/nootherchoice.webp" class="moviepic">
+<div class="overlay">
+    <div class="movietext">No Other Choice<br>★★★★½</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/zootopia2.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">Zootopia 2<br>★★★★½</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/nocountry.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">No Country for Old Men<br>★★★★</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/bugonia.webp" class="moviepic">
+<div class="overlay">
+    <div class="movietext">Bugonia<br>★★★★★</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/roofman.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">Roofman<br>★★★★</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/milk.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">Milk & Serial<br>★★★½</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/houseof.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">House of the Devil<br>★★★</div>
+</div>
+</div>
+<div class="movie">
+<img src="images/movies/chime.jpg" class="moviepic">
+<div class="overlay">
+    <div class="movietext">Chime<br>★★★½</div>
+</div>
+</div>
+</div>
+<div id="marty" class="moviecontent" style="display: none;">
+<div class="bar">Marty Supreme</div>
+<button onclick="closeMovie('marty')"><p>go back</p></button></div>
+</div>
+ <div id="shows" class="tab" style="display: none; padding: 0px;">
+ <div class="tvshows"></div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>

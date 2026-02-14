@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>kyu's diary</title>
+    <link href="hover.css" rel="stylesheet">
+    <link href="diary.css" rel="stylesheet">
+    <script src="scripts/wobble.js"></script>
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/calendar.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+</head>
+<body>
+<div id="crt"></div>
+    <div class="allstuff">
+    <div class="header">
+        <div class="title hvr-rotate">/diary<img class="headerimg" src="images/ralseiclap.gif"></div>
+    </div>
+    <div class="lsideimg"><img class="lain" src="images/dithlain.png"></div>
+    <div class="container">
+    <div class="lside">
+        <div class="tabs">
+        <li><button class="tablinks" onclick="openTab('hello')" style="color: #c3ffcd; margin-top: 10px;">cover page</button></li>
+        <details open><summary>feb 2026</summary>
+        <li><button class="tablinks" onclick="openTab('3')">took me forever <img src="images/buttons/boo.gif"></button></li>
+        <li><button class="tablinks" onclick="openTab('2')">well ok</button></li>
+        <li><button class="tablinks" onclick="openTab('1')">arkham asylum</button></li>
+        </details>
+        <details><summary>2025</summary></details>
+        </div>
+    <!--calendar starts-->
+    <div class="calendarlace">
+    <div class="calendar">
+    <div class="calendar-header">
+      <div class="leftright"><button id="prev-month">‹</button></div>
+        <div id="month-year"></div>
+      <div class="leftright"><button id="next-month">›</button></div>
+    </div>
+    <div class="calendar-body">
+      <div class="calendar-weekdays">
+        <!-- Weekday Names -->
+         <li>Mon</li>
+         <li>Tue</li>
+         <li>Wed</li>
+         <li>Thu</li>
+         <li>Fri</li>
+         <li>Sat</li>
+         <li>Sun</li>
+      </div>
+      <div class="calendar-dates">
+        <!-- Dates will be populated here -->
+      </div>
+    </div>
+  </div>
+</div>
+    <a href="index.html" class="linkback">go back?</a>
+    </div>
+    <div class="main">
+        <div id="hello" class="tab" style="display: block; padding: 0px;">
+        <div class="lace">
+        <div class="maininner">
+        <img id="mainimg" style="margin-top: 25px;" src="images/paul.JPG">
+        <text><div id="wobble" style="margin-top: 10px;">welcome to my diary</div></text>
+        <br>
+        <p class="cover">hi again, you've found my diary!
+        <br><br>
+        this is where i'll dump my ramblings, small or big entries, really anything random i want to add.
+        <br><br>
+        <i>TW: probably uninteresting</i>
+        </p>
+        </div>
+        </div>
+        </div>
+        <div id="1" class="tab" style="display: none; padding: 0px;">
+        <div class="lace">
+        <div class="maininner">
+        <h1 class="entrytitle">A proper test</h1>
+        <h2 class="diarydate">05/02/2026</h2>
+        <p class="entry">I wanted to write a proper entry in order to test how images will look etc. I think I want to be
+            able to use tags but I'm still not sure how to implement that so I will have to ask Mr. Coding Man about it.
+            <br><br>
+            <img src="images/diaryimgs/arkham.png" style="height: 150px;"> I recently got Arkham Asylum on the Switch 2
+            as people on reddit said it ran well on it and I've actually never properly played the trilogy.
+            <br><br>
+            Anyway I think that's good enough for a real test entry, I'm not sure if I will even keep this when I make the website live
+            but eh oh well.
+        </p>
+        </div>
+        </div>
+        </div>
+         <div id="2" class="tab" style="display: none; padding: 0px;">
+        <div class="lace">
+        <div class="maininner">
+        <h1 class="entrytitle">Random entry</h1>
+        <h2 class="diarydate">06/02/2026</h2>
+        <p class="entry">Hallo again, just testing this summary stuff so I can organise by entries by month. I want to add a calendar but a lot of the
+            calendar js is deprecated and probs won't work forever. So I'm trying to figure out a way to create my own widget.
+        </p>
+        </div>
+        </div>
+        </div>
+        <div id="3" class="tab" style="display: none; padding: 0px;">
+        <div class="lace">
+        <div class="maininner">
+        <h1 class="entrytitle">Forever isn't that long</h1>
+        <h2 class="diarydate">06/02/2026</h2>
+        <p class="entry">Okay that may have taken me all day but it's done and I'm (probably) not going to touch this page's css or html for a while...
+            unless I do. Which I probably will because I am in constant pursuit of perfection (which I know is bad).
+            <br><br>
+            Well, either way I did it. I coded my own calendar widget and it looks pretty good. And it's totally useless. Like it works, but I don't even
+            think it adds anything to this page other than looks. It fits the theme of the page, and that's most of the point of my website. And it taught me a bit.
+            <br>
+            Kind of.
+            <br><br>
+            I pretty much did a mixture of following this <a href="https://www.youtube.com/watch?v=Z1BGAivZRlE">youtube tutorial</a> and a lot of inspect element on
+            other people's websites to see how they did theirs. That's all I guess *shrug*
+        </p>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>

@@ -1,0 +1,427 @@
+body {
+  display: flex;
+  font-family: "nova", ms pgothic, sans-serif;
+  color: #f3ebe7;
+  text-align: center;
+  font-size: 16px;
+}
+#crt {
+  background-image: url(images/bgs/crtnoframe.png);
+  mix-blend-mode: darken;
+  opacity: 0.50;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+text {
+  color: #cce6b3;
+  font-size: 20px;
+  margin: 0px;
+  letter-spacing: 1px;
+  font-family: romancea;
+}
+@font-face {
+  /* font by me! */
+  font-family: nova;
+  src: url(fonts/nova.ttf);
+}
+@font-face {
+  /* font by codeman38! https://www.1001fonts.com/users/codeman38/ */
+  font-family: yoster;
+  src: url(fonts/yoster.ttf);
+}
+@font-face {
+  /* font by https://leodacosta.itch.io/gothic-pixel-font */
+  font-family: gothicpixel;
+  src: url(fonts/GothPixelFont.ttf);
+}
+@font-face {
+  /* font by https://www.fontspace.com/old-english-gothic-pixel-font-f83405 */
+  font-family: oldenglishgoth;
+  src: url(fonts/OldEnglishGoth.ttf);
+}
+@font-face {
+  /* font by https://www.asterism-m.com/font/ */
+  font-family: romancea;
+  src: url(fonts/RomanceA.ttf);
+}
+@font-face {
+  /* font by https://drive.google.com/file/d/1FR15SoZPBp5pJY9JY5x0p86MMEPzBgV8/view */
+  font-family: chaos;
+  src: url(fonts/Angelic.ttf);
+}
+::-webkit-scrollbar {
+  width: 2px;
+  color: transparent;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0px 1px 3px #222223;
+}
+::-webkit-scrollbar-thumb {
+  background: #cce6b39f;
+  border-radius: 2px;
+}
+body {
+  background-color: #353b36;
+  background-image: url(images/bgs/lainsroomother.webp);
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  margin-top: 20px;
+}
+.maininner img {
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.maininner img:hover {
+  transform: rotate(2deg);
+   transition: 0.5s ease;
+}
+.lace {
+  position: flex;
+  border: 30px solid transparent;
+  border-left: none;
+  border-right: none;
+  border-image: url(images/borders/blacklace.png) 55 round;
+}
+h1 {
+  color: #c3ffcd;
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 1px;
+  font-family: romancea;
+}
+h1.entrytitle {
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: ease 2s;
+}
+h1.entrytitle:hover {
+  font-family: chaos;
+}
+h2 {
+  color: #c3ffcd;
+  font-size: 18px;
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+h2.diarydate {
+  color: #7ba071;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+i {
+  color: #c3ffcd;
+  font-style: normal;
+}
+p {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+p.big {
+  line-height: 1.2;
+}
+p.entry {
+  line-height: 1.2;
+  text-align: left;
+  margin: 20px;
+}
+p.cover {
+  text-align: center;
+  line-height: 1.2;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+p.linkto {
+  line-height: 1.2;
+  text-align: left;
+  font-size: 18px;
+  margin: 10px;
+}
+a:link {
+  text-decoration: none;
+  color: #7ba071;
+}
+a:active {
+  color: #6cc3c1;
+}
+a:visited {
+  color: #7ba071;
+}
+a:hover {
+  color: #6cc3c1;
+}
+#s-m-t-tooltip {
+  /* basic */
+  max-width: 180px;
+  z-index: 10;
+  margin: 24px 14px 7px 12px;
+  /* style and design */
+  padding: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid #72a17a;
+  background: url(images/bgs/mintgingham.gif), #222223;
+  background-blend-mode: multiply;
+  color: #c3ffcd;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 5px #040404;
+}
+.allstuff {
+  max-width: 800px;
+  margin: 0;
+}
+.header {
+  position: flex;
+  width: 800px;
+  height: 100px;
+  margin-top: 30px;
+  text-align: left;
+}
+.headerimg {
+  position: absolute;
+  left: 230px;
+  bottom: 10px;
+  width: 60px;
+  z-index: 4;
+}
+.title {
+  font-family: "yoster";
+  font-size: 60px;
+  position: absolute;
+  color: #c3ffcd;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px 3px #72a17a;
+  z-index: 5;
+  top: 89px;
+}
+.outcontainer {
+  position: relative;
+  border-width: 10px;
+  border-style: solid;
+  border-image: url(images/mintclover.png) 10 round;
+  /* cute clover i made */
+  width: 250px;
+  height: 350px;
+  padding: 1px;
+}
+.container {
+  height: 600px;
+  width: 800px;
+  display: flex;
+  min-width: 800px;
+}
+.lside {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 100%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  z-index: 3;
+}
+.lsideimg {
+  position: relative;
+  height: auto;
+  z-index: 2;
+}
+.lain {
+  position: absolute;
+  left: 720px;
+  top: 154px;
+  width: 240px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.lain:hover {
+  transform: scaleX(-1);
+}
+.main {
+  display: flex;
+  width: 500px;
+  height: 594px;
+  background: url(images/bgs/dithyosh.png), #c3ffcd;
+  background-blend-mode: luminosity;
+  border: solid 1px #7ba071;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.maininner {
+  width: 400px;
+  height: 450px;
+  padding: 10px;
+  background: #040404f6;
+  border: #7ba071 dashed 1px;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#mainimg {
+  width: 250px;
+  height: 160px;
+  margin-top: 10px;
+}
+.tabs {
+  display: block;
+  width: 228px;
+  height: 328px;
+  border: solid 1px #7ba071;
+  background: url(images/bgs/mintgingham.gif), #222223;
+  background-blend-mode: multiply;
+  padding: 10px;
+  overflow-y: scroll;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.nav {
+  display: flex;
+  width: 228px;
+  height: 100px;
+  border: solid 1px #7ba071;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #040404;
+}
+.tablinks {
+  display: block;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: #f3ebe7;
+  font-family: "nova";
+  font-size: 18px;
+  text-align: left;
+  padding: 5px;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-left: 10px;
+}
+.tablinks:hover {
+  color: #7ba071;
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+  width: 100%;
+  display: block;
+}
+details > summary {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: #cce6b3;
+  font-family: "nova";
+  font-size: 18px;
+  text-align: left;
+  padding: 5px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+details > p {
+  background-color: transparent;
+  padding: 0px;
+  margin: 0;
+}
+/* calendar start */
+.calendarlace {
+  position: relative;
+  border: 15px solid transparent;
+  padding: 0px;
+  border-image: url(images/borders/blacklace.png) 50 round;
+  height: fit-content;
+  margin-top: 15px;
+  right: 13px;
+}
+.calendar {
+  width: auto;
+  background-color: #040404;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.calendar-header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  justify-content: space-between;
+}
+.calendar-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #c3ffcd;
+}
+#month-year {
+  font-size: 16px;
+  font-weight: bold;
+}
+.calendar-weekdays, .calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: #222223 solid 1px;
+}
+.calendar-weekdays li, .calendar-dates li{
+  display: grid;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  font-size: 14px;
+}
+.calendar-weekdays div, .calendar-dates div {
+  text-align: center;
+  padding: 10px;
+}
+.calendar-weekdays {
+  background-color: #7ba071;
+  padding: 5px;
+  border: #222223 solid 1px;
+}
+.calendar-dates :hover{
+  background-color: #c3ffcdb0;
+}
+.calendar-dates li.inactive {
+  color: #f3ebe752;
+}
+.calendar-dates li.active {
+  color: #cce6b3;
+  background-color: #c3ffcd55;
+}
+.leftright {
+  font-family: romancea;
+  width: 23px;
+}
+.leftright:hover {
+  background-color: #7ba0715c;
+  border-radius: 20%;
+  width: 23px;
+  text-align: center;
+}
+.calendar-dates li.active:hover {
+  background-color: #c3ffcdb0;
+}
+.linkback {
+  padding-top: 15px;
+  text-align: left;
+}
+
+
+
+
+
+
+

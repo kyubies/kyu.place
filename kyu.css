@@ -1,0 +1,562 @@
+body {
+  display: flex;
+  font-family: "nova", ms pgothic, sans-serif;
+  color: #f3ebe7;
+  text-align: center;
+  font-size: 16px;
+}
+#crt {
+  background-image: url(images/bgs/crtnoframe.png);
+  mix-blend-mode: darken;
+  opacity: 0.15;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+text {
+  color: #cce6b3;
+  font-size: 20px;
+  margin: 0px;
+  font-family: romancea;
+}
+@font-face {
+  /* font by me! */
+  font-family: nova;
+  src: url(fonts/nova.ttf);
+}
+@font-face {
+  /* font by https://leodacosta.itch.io/gothic-pixel-font */
+  font-family: gothicpixel;
+  src: url(fonts/GothPixelFont.ttf);
+}
+@font-face {
+  /* font by https://www.fontspace.com/old-english-gothic-pixel-font-f83405 */
+  font-family: oldenglishgoth;
+  src: url(fonts/OldEnglishGoth.ttf);
+}
+@font-face {
+  /* font by https://www.asterism-m.com/font/ */
+  font-family: romancea;
+  src: url(fonts/RomanceA.ttf);
+}
+@font-face {
+  /* font by codeman38! https://www.1001fonts.com/users/codeman38/ */
+  font-family: yoster;
+  src: url(fonts/yoster.ttf);
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  color: transparent;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0px 1px 3px #222223;
+}
+::-webkit-scrollbar-thumb {
+  background: #cce6b39f;
+  border-radius: 5px;
+}
+body {
+  background-color: #222223;
+  background-image: url(images/bgs/computer.gif);
+  background-blend-mode: multiply;
+  background-size: 500px;
+  margin-top: 20px;
+}
+h1 {
+  color: #c3ffcd;
+  font-family: "yoster";
+  text-align: left;
+  margin: 0px;
+}
+h2 {
+  color: #c3ffcd;
+  font-size: 16px;
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+i {
+  color: #c3ffcd;
+  font-style: normal;
+}
+p {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  font-family: "yoster";
+  font-size: 60px;
+  position: absolute;
+  color: #c3ffcd;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px 3px #72a17a;
+  left: 405px;
+  top: 127px;
+}
+.container {
+  position: relative;
+  margin: auto;
+  border-width: 10px;
+  border-style: solid;
+  opacity: 100%;
+  border-image: url(images/mintclover.png) 30 fill round;
+  /* cute clover i made */
+  width: 800px;
+  height: 1000px;
+  padding: 5px;
+  z-index: 1;
+}
+.kyubert {
+  /* art by me and not free use */
+  position: absolute;
+  z-index: 2;
+  top: 400px;
+  right: 650px;
+  height: 600px;
+  transition: 0.5s ease;
+  transform: translateX(0px);
+}
+.keychain {
+  /* from https://afroken.neocities.org/graphics */
+  position: absolute;
+  z-index: 2;
+  bottom: -150px;
+  right: -50px;
+}
+.kyubert:hover {
+  transform: translateX(-35px);
+}
+#s-m-t-tooltip {
+  /* basic */
+  max-width: 180px;
+  z-index: 10;
+  margin: 24px 14px 7px 12px;
+  /* style and design */
+  padding: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid #72a17a;
+  background: url(images/bgs/mintgingham.gif), #222223;
+  background-blend-mode: multiply;
+  color: #c3ffcd;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 5px #040404;
+}
+.box {
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 5px;
+  width: 800px;
+  height: 1000px;
+  padding: 10px;
+  background: url(images/bgs/mintgingham.gif), #222223;
+  box-shadow: inset 0px 0px 10px #606565, 0px 0px 10px #222223;
+  background-blend-mode: multiply;
+  z-index: 2;
+}
+.footer {
+  text-align: left;
+  margin-top: 30px;
+  width: 800px;
+  padding: 0px;
+  text-shadow: 0px 0px 3px #72a17a;
+  font-size: 16px;
+  color: #c3ffcd;
+  line-height: 1.2;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 200px 360px 200px; /* lside, centre, rside */
+  position: relative;
+  padding: auto;
+  gap: 10px;
+  height: fit-content;
+  width: fit-content;
+  grid-template-areas:
+    "header header header"
+    "lside main rside"
+    "lside main rside"
+    "buttonside media media";
+
+  grid-template-rows: 200px 400px 200px 150px; /* header, nav, lol, idk yet, idk buttons? */
+}
+.grid > div {
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+  overflow: visible;
+}
+.header {
+  grid-area: header;
+  border: none;
+  overflow: visible;
+  background-color: transparent;
+  padding: 0;
+}
+.header::after{
+  content: '';
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  top: 0px;
+  left: 0px;
+  background-image: url(images/bgs/lainroom2.jpg);
+  background-position: 0px -70px;
+  background-size: cover;
+  opacity: 0.7;
+}
+.lside {
+  grid-area: lside;
+  background-color: #040404;
+  border: solid 1px #7ba071;
+  background-size: 100px;
+}
+.main {
+  grid-area: main;
+}
+.featart {
+  max-width: 90%;
+  max-height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.486) 0px 2px 4px -1px;
+  margin: 5px;
+  transition: ease 0.5s;
+  border: 1px dashed #72a17a;
+  margin-top: 18px;
+  filter: grayscale(60%);
+}
+.pin {
+  width: 100px;
+}
+.featart:hover {
+  filter: none;
+  z-index: 2;
+}
+.rside {
+  grid-area: rside;
+  background-color: transparent;
+}
+.media {
+  grid-area: media;
+  background-color: transparent;
+}
+.buttonside {
+  grid-area: buttonside;
+  background-color: transparent;
+}
+.outer {
+  height: fit-content;
+  border: solid 1px #7ba071;
+  background-color: #040404;
+  border-radius: 5px;
+  padding: 5px;
+}
+.inner {
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid #7ba071;
+  box-sizing: border-box;
+  padding: 0px;
+  display: block;
+  letter-spacing: 1px;
+  background-color: #040404;
+}
+#helpy {
+  background-image: url(images/helpythink.gif);
+  width: 100px;
+  height: 140px;
+  position: relative;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#helpy:hover {
+  background-image: url(images/helpydance1.gif);
+}
+#maininner {
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px;
+  padding-right: 5px;
+  letter-spacing: 1px;
+  overflow-y: scroll;
+}
+p.big {
+  line-height: 1.2;
+}
+.bar {
+  /*bar at top of windows*/
+  border-bottom: #7ba071 1px solid;
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  font-size: 22px;
+  font-family: romancea;
+  color: #040404;
+  letter-spacing: 1px;
+  background: url(images/bgs/ditheredbg2.png),
+    linear-gradient(to bottom, #cce6b3, #7ba071, #cce6b3);
+  background-blend-mode: luminosity;
+  background-position: center;
+  border-radius: 5px 5px 0px 0px;
+  background-size: 40px;
+  padding: 0px;
+  padding-top: 5px;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px #cce6b3;
+}
+.updatetitle {
+  text-shadow: 0px 1px 3px #72a17a;
+  position: absolute;
+  top: 340px;
+  left: -5px;
+  line-height: 20px;
+  color: #c3ffcd;
+  letter-spacing: 1px;
+}
+.spikesmall {
+  position: absolute;
+  top: 340px;
+  left: 167px;
+}
+.updateinner {
+  width: 100%;
+  background-color: #72a17a4e;
+  border-radius: 0px;
+  margin-bottom: 5px;
+  border: 1px solid #72a17a;
+  height: 167px;
+  overflow-y: scroll;
+}
+.links {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  height: 20px;
+  border-bottom: dashed #7ba071 1px;
+  display: block;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0px;
+}
+li {
+  list-style-type: none;
+  border-bottom: #7ba071 dashed 1px;
+}
+.tablinks {
+  /* links within site*/
+  display: block;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: #f3ebe7;
+  font-family: "nova";
+  font-size: 18px;
+  text-align: left;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+.tablinks:hover {
+  color: #7ba071;
+  cursor: pointer;
+}
+#lastfm-widget {
+  background-color: #040404;
+  padding: 10px;
+  border: solid 1px #7ba071;
+  border-radius: 5px;
+  scrollbar-width: none;
+}
+.guestbook {
+  position: absolute;
+  top: 820px;
+  left: 550px;
+  width: 280px;
+  z-index: 1;
+}
+.guestbook:hover {
+  filter: drop-shadow(0 0 5px #c3ffcd);
+}
+.guestdiv {
+  border: none;
+  position: absolute;
+  top: 860px;
+  left: 673px;
+  width: 80px;
+  height: 30px;
+  transform: skew(-11deg, 8deg);
+  z-index: 6;
+  padding: 10px;
+  text-align: center;
+  color: #222223;
+  font-weight: bold;
+}
+#song {
+  font-size: 18px;
+}
+a:link {
+  text-decoration: none;
+  color: #7ba071;
+}
+a:visited {
+  color: #7ba071;
+}
+a:active {
+  color: #6cc3c1;
+}
+a:hover {
+  color: #6cc3c1;
+}
+.progress {
+  height: 13px;
+  position: relative;
+  background: #040404;
+  border: #c3ffcd 1px solid;
+  border-radius: 3px;
+  box-shadow: inset 0 0px 5px #7ba071;
+  margin: 5px;
+  margin-top: 8px;
+  padding: 2px;
+  overflow: hidden;
+}
+.progress > span {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background-image: url(images/dividers/wah.gif);
+  box-shadow: inset 0 0px 5px #040404;
+  overflow: hidden;
+}
+.progress > span:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.344),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -20px;
+  animation: shine 5s infinite linear; /* Animation */
+}
+@keyframes shine {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 150px;
+  }
+}
+.buttontitle {
+  text-shadow: 0px 1px 3px #72a17a;
+  position: absolute;
+  top: -15px;
+  left: -4px;
+  line-height: 20px;
+  color: #c3ffcd;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+.buttonthing {
+  display: flex;
+}
+.button {
+  background-color: #040404;
+  font-family: nova;
+  color: #cce6b3;
+  border: #c3ffcd 1px solid;
+}
+.notediv {
+  position: absolute;
+  right: -250px;
+  top: 80px;
+}
+.notediv:hover {
+  filter: drop-shadow(0 0 5px #c3ffcd);
+}
+.notewords {
+  border: none;
+  position: absolute;
+  text-align: center;
+  color: #222223;
+  font-weight: bold;
+  top: 50px;
+  left: 50px;
+  height: 80px;
+  width: 130px;
+  padding: 10px;
+  padding-top: 20px;
+}
+.lilydiv {
+  position: absolute;
+  right: -70px;
+  bottom: 10px;
+  transform: rotate(50deg);
+}
+.katadiv {
+  position: absolute;
+  z-index: -2;
+  left: 30px;
+  bottom: 120px;
+}
+.stamps {
+  overflow: hidden;
+  width: fit-content;
+  position: relative;
+  width: auto;
+  filter: grayscale(60%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.stamps > div {
+  animation: marquee 20s linear infinite;
+  animation-play-state: paused;
+  animation-delay: -10s; /* This MUST be -duration/2 */
+  width: 100%;
+  min-width: fit-content;
+  text-wrap: nowrap;
+}
+
+.stamps > div.follower {
+  position: absolute;
+  top: 0;
+  animation-delay: 0s;
+}
+
+.stamps > div.play {
+  animation-play-state: running;
+}
+
+.stamps:hover > div.play {
+  animation-play-state: paused;
+}
