@@ -62,9 +62,12 @@ text {
 }
 body {
   background-color: #222223;
-  background-image: url(images/bgs/computer.gif);
+  background-image: url(images/bgs/lainroom.gif);
+  background-size: cover;
   background-blend-mode: multiply;
-  background-size: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin-top: 20px;
 }
 h1 {
