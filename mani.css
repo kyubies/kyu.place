@@ -1,0 +1,189 @@
+body {
+  display: flex;
+  font-family: "nova", ms pgothic, sans-serif;
+  color: #f3ebe7;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color: #454d4c;
+  background-image: url(images/bgs/lainroom2.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 20px;
+}
+#crt {
+  background-image: url(images/bgs/crtnoframe.png);
+  mix-blend-mode: darken;
+  opacity: 0.15;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+text {
+  color: #cce6b3;
+  font-size: 20px;
+  margin: 0px;
+  font-family: romancea;
+}
+@font-face {
+  /* font by me! */
+  font-family: nova;
+  src: url(fonts/nova.ttf);
+}
+@font-face {
+  /* font by https://leodacosta.itch.io/gothic-pixel-font */
+  font-family: gothicpixel;
+  src: url(fonts/GothPixelFont.ttf);
+}
+@font-face {
+  /* font by https://www.fontspace.com/old-english-gothic-pixel-font-f83405 */
+  font-family: oldenglishgoth;
+  src: url(fonts/OldEnglishGoth.ttf);
+}
+@font-face {
+  /* font by https://www.asterism-m.com/font/ */
+  font-family: romancea;
+  src: url(fonts/RomanceA.ttf);
+}
+@font-face {
+  /* font by codeman38! https://www.1001fonts.com/users/codeman38/ */
+  font-family: yoster;
+  src: url(fonts/yoster.ttf);
+}
+@font-face {
+  /* font by https://drive.google.com/file/d/1FR15SoZPBp5pJY9JY5x0p86MMEPzBgV8/view */
+  font-family: chaos;
+  src: url(fonts/Angelic.ttf);
+}
+.all {
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header {
+  display: flex;
+  position: relative;
+  width: 700px;
+  height: 100px;
+  margin-top: 20px;
+  font-size: 70px;
+  justify-content: center;
+  align-items: center;
+  font-family: "yoster";
+  color: #c3ffcd;
+  letter-spacing: 3px;
+  text-shadow: 0px 1px 3px #72a17a;
+}
+.subhead {
+  display: flex;
+  position: relative;
+  width: 700px;
+  font-size: 25px;
+  font-family: romancea;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  text-shadow: 1px 1px 3px #72a17a;
+}
+.container {
+  position: relative;
+  width: 700px;
+  display: flex;
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+  background-color: #000000a3;
+  line-height: 20px;
+}
+.titles {
+  display: flex;
+  position: relative;
+  width: 680px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: romancea;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  color: #c3ffcd;
+  text-shadow: 1px 1px 3px #72a17a;
+}
+hr {
+  border: #72a17a solid 1px;
+}
+i {
+  color: #c3ffcd;
+}
+.footer {
+  font-size: 18px;
+  display: flex;
+  position: relative;
+  width: 700px;
+  padding: 10px;
+}
+a:link {
+  text-decoration: none;
+  color: #7ba071;
+}
+a:active {
+  color: #6cc3c1;
+}
+a:visited {
+  color: #7ba071;
+}
+a:hover {
+  color: #6cc3c1;
+}
+.angel {
+  position: fixed;
+  right: 1000px;
+  left: 80px;
+  top: 80px;
+  filter: opacity(70%);
+  animation: float 3s ease-in-out infinite;
+}
+.angel2 {
+  position: fixed;
+  right: 80px;
+  left: 1000px;
+  top: 80px;
+  filter: opacity(70%);
+  animation: float 3s ease-in-out infinite;
+}
+ @keyframes float {
+  0% {
+  transform: translateY(0);
+}
+
+  50% {
+  transform: translateY(-20px);
+}
+  100% {
+  transform: translateY(0);
+}
+}
+#s-m-t-tooltip {
+  /* basic */
+  max-width: 180px;
+  z-index: 10;
+  margin: 24px 14px 7px 12px;
+  /* style and design */
+  padding: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid #72a17a;
+  background: url(images/bgs/mintgingham.gif), #222223;
+  background-blend-mode: multiply;
+  color: #c3ffcd;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 5px #040404;
+}

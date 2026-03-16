@@ -235,11 +235,9 @@ button:hover {
     width: 500px;
     margin-top: 10px;
     padding: 10px;
-    background-image: url(images/bgs/rain.gif);
     background-size: cover;
-    background-color: #454d4c;
+    background-color: #151616d2;
     background-blend-mode: multiply;
-    box-shadow: inset 0px 0px 10px #36393990, 0px 0px 10px #2222239f;
 }
 .letterboxd img {
     opacity: 0.9;
@@ -268,7 +266,6 @@ button:hover {
   filter: grayscale(40%);
 }
 .movielist {
-  background-color: #222223;
   display: flex;
   flex-direction: row;
   align-content: space-evenly;
